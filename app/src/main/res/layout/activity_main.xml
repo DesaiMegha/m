@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PATIENT REGISTRATION"
+        android:textSize="34dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textStyle="bold">
+    </TextView>
+
+    <TextView
+        android:id="@+id/txtname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registration"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="30dp"
+        android:text="Name :"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold">
+    </TextView>
+
+    <EditText
+        android:id="@+id/editname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registration"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="14dp"
+        android:layout_toRightOf="@+id/txtname"
+        >
+    </EditText>
+
+    <TextView
+        android:id="@+id/txtphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone :"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/txtname"
+        android:layout_marginLeft="5dp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/editphone"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editname"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="14dp"
+        android:layout_toRightOf="@+id/txtphone">
+    </EditText>
+
+    <RadioGroup
+        android:id="@+id/rg1"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/txtphone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textgender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender:"
+            android:textSize="25dp"
+            android:layout_marginTop="10dp">
+        </TextView>
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rg1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="10dp"
+            android:text="MALE"
+            android:textSize="21dp">
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rg1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:text="FEMALE"
+            android:textSize="21dp">
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rg1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:text="OTHER"
+            android:textSize="21dp">
+        </RadioButton>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address :"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/rg1"
+        android:layout_marginLeft="5dp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/editaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rg1"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="14dp"
+    android:layout_toRightOf="@id/txtaddress">
+    </EditText>
+
+    <TextView
+        android:id="@+id/txtDOB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="D.O.B. :"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/txtaddress"
+        android:layout_marginLeft="5dp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/editDOB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editaddress"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="14dp"
+        android:layout_toRightOf="@+id/txtDOB">
+    </EditText>
+
+    <TextView
+        android:id="@+id/txtage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age :"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/txtDOB"
+        android:layout_marginLeft="5dp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/editage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editDOB"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="14dp"
+        android:layout_toRightOf="@+id/txtage">
+    </EditText>
+
+    <TextView
+        android:id="@+id/txtPI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Patient Illness:"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/txtage"
+        android:layout_marginLeft="5dp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/editPI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editage"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="14dp"
+        android:layout_toRightOf="@+id/txtPI">
+    </EditText>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:textSize="30dp"
+        android:layout_below="@+id/editPI"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true">
+    </Button>
+
+</RelativeLayout>
+
+
+
+
+
+
